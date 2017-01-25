@@ -1,0 +1,48 @@
+.container {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  perspective: 1000px;
+
+  .image,
+  .fragment {
+    // background-image: url('../../assets/gary1.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  .quoteContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+
+    .quote {
+      transform: translateX(-85%);
+      line-height: 1.7;
+    }
+
+    .author {
+      font-size: 2.5em;
+      transform: translateX(-75%);
+      font-style: italic;
+
+      font-family: 'Rubik', sans-serif;
+      span {
+        background-color: rgba(255, 255, 0, 0.55);
+        line-height: 1.3;
+      }
+    }
+  }
+}
